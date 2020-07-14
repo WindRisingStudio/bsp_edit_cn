@@ -1,0 +1,38 @@
+# This is an example BossShopPro shop.
+# You can use the the ConfigEdit panel to edit the raw configuration text
+# and the QuickEdit panel for helpful features, like material name auto-complete and many more.
+#
+# Wiki: https://www.spigotmc.org/wiki/bossshoppro/
+#
+ShopName: shop
+signs:
+  text: '[shop]'
+  NeedsPermissionToCreateSign: true
+DisplayName: '&9&l&nExample Shop'
+shop:
+  'STONE':
+    RewardType: item
+    PriceType: money
+    Price: 15
+    Reward:
+    - type:STONE
+    - amount:1
+    MenuItem:
+    - '%rewarditem_1%'
+    - lore:#&eClick to buy for &e$%price%
+    Message: '&aYou''ve purchased &e%reward%&a for &e$%price%'
+    InventoryLocation: 1
+    ExtraPermission: ''
+  'DIAMOND':
+    RewardType: item
+    PriceType: money
+    Price: 15
+    Reward:
+    - type:DIAMOND
+    - amount:1
+    MenuItem:
+    - '%rewarditem_1%'
+    - lore:#&eClick to buy for &e$%price%
+    Message: '&aYou''ve purchased &e%reward%&a for &e$%price%'
+    InventoryLocation: 2
+    ExtraPermission: ''
